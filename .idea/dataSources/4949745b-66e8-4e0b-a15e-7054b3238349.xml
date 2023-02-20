@@ -1418,7 +1418,7 @@ false posix/WET
 false posix/Zulu
 false posixrules
 </TimeZones>
-      <IntrospectionStateNumber>622978</IntrospectionStateNumber>
+      <IntrospectionStateNumber>623015</IntrospectionStateNumber>
       <StartupTime>1675986249</StartupTime>
     </root>
     <database id="2" parent="1" name="backend">
@@ -1442,10 +1442,8 @@ false posixrules
 13163||-9223372036854775808|U|G
 13163||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>622979</IntrospectionStateNumber>
+      <IntrospectionStateNumber>623016</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|84729|84731|1
-</Relations>
     </database>
     <database id="5" parent="1" name="postgres">
       <ObjectId>13463</ObjectId>
@@ -1540,7 +1538,7 @@ false posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>622979</IntrospectionStateNumber>
+      <IntrospectionStateNumber>623016</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="26" parent="4" name="plpgsql">
@@ -1641,120 +1639,5 @@ false posixrules
       <Handler>pg_catalog.spghandler</Handler>
       <HandlerId>334</HandlerId>
     </access-method>
-    <sequence id="38" parent="25" name="tickets_id_seq">
-      <ObjectId>84729</ObjectId>
-      <Owner>myuser</Owner>
-      <StateNumber>622971</StateNumber>
-      <DataType>integer|0s</DataType>
-    </sequence>
-    <object-type id="39" parent="25" name="enum_tickets_status">
-      <ObjectId>84725</ObjectId>
-      <Owner>myuser</Owner>
-      <StateNumber>622970</StateNumber>
-      <SubKind>enum</SubKind>
-      <Labels>in progress
-finish</Labels>
-      <SubCategory>enum</SubCategory>
-    </object-type>
-    <table id="40" parent="25" name="SequelizeMeta">
-      <ObjectId>84741</ObjectId>
-      <Owner>myuser</Owner>
-      <StateNumber>622972</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-    </table>
-    <table id="41" parent="25" name="tickets">
-      <ObjectId>84731</ObjectId>
-      <Owner>myuser</Owner>
-      <StateNumber>622971</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-    </table>
-    <column id="42" parent="40" name="name">
-      <Position>1</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>622972</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="43" parent="40" name="SequelizeMeta_pkey">
-      <ObjectId>84744</ObjectId>
-      <StateNumber>622972</StateNumber>
-      <ColNames>name</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>3126</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="44" parent="40" name="SequelizeMeta_pkey">
-      <ObjectId>84745</ObjectId>
-      <StateNumber>622972</StateNumber>
-      <ColNames>name</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>SequelizeMeta_pkey</UnderlyingIndexName>
-    </key>
-    <column id="45" parent="41" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>622971</StateNumber>
-      <DefaultExpression>nextval(&apos;tickets_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="46" parent="41" name="request">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>622971</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="47" parent="41" name="result">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>622971</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="48" parent="41" name="status">
-      <Position>4</Position>
-      <DataType>enum_tickets_status|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>622971</StateNumber>
-      <DefaultExpression>&apos;in progress&apos;::enum_tickets_status</DefaultExpression>
-      <TypeId>84725</TypeId>
-    </column>
-    <index id="49" parent="41" name="tickets_pkey">
-      <ObjectId>84739</ObjectId>
-      <StateNumber>622971</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="50" parent="41" name="tickets_id">
-      <ObjectId>84746</ObjectId>
-      <StateNumber>622973</StateNumber>
-      <ColNames>id</ColNames>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="51" parent="41" name="tickets_request">
-      <ObjectId>84747</ObjectId>
-      <StateNumber>622973</StateNumber>
-      <ColNames>request</ColNames>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>3126</ClassIds>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="52" parent="41" name="tickets_pkey">
-      <ObjectId>84740</ObjectId>
-      <StateNumber>622971</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>tickets_pkey</UnderlyingIndexName>
-    </key>
   </database-model>
 </dataSource>

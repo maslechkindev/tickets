@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "../node_modules/.bin/ts-node-dev --respawn --pretty --transpile-only producer/src/index.ts"
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts"
   },
   "repository": {
     "type": "git",
