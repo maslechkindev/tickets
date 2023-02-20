@@ -1,0 +1,8 @@
+/consumer/node_modules
+/producer/node_modules
+/consumer/dist
+/producer/dist
+/producer/.env
+/consumer/.env
+.DS_Store
+.idea
