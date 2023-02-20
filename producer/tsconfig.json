@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "lib": [
+      "esnext"
+    ],
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "target": "es2017",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist"
+  }
+}
